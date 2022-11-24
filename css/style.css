@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.grid1{
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-areas:
+      "coldplay nav";
+    grid-template-rows: 60px; 
+    grid-template-columns: 250px 1050px;
+}
+
+section.coldplay{
+    grid-area: coldplay;  
+    background-color: white;   
+}
+ 
+.coldplay{
+    padding: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+    color: #000000;
+    font-weight: bold;
+    text-align: left;
+    vertical-align: middle;
+}
+
+section.nav{
+    grid-area: nav;
+    background-color: white;
+}
+
+.menu{
+    padding-top: 23px;
+    list-style: none;
+    text-align: center;
+    align-content: space-evenly;
+}
+
+.menu li{
+    display:inline-block;
+    text-align: center;
+}
+
+.menu li a{
+    margin: 90px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color:#000000
+    
+}
+
+.menu li a:hover{
+    color: #ffffff;
+    background-color: #000000;
+}
+
+
+.grid2{
+    background-color: white;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-areas:
+      "tour image image"
+      "video video video"
+      "form form xxx";
+    grid-template-rows: 445px 510px 240px; 
+    grid-template-columns: 630px 370px 250px;
+}
+
+section.tour{
+    grid-area: tour;  
+    background-color: white;   
+}
+
+section.image {
+    grid-area: image;
+    background-color: blue;     
+}
+
+section.video {
+    grid-area: video;
+    background-color: maroon;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+  
+section.form{
+    grid-area: form;
+    background-color: white;
+}
+
+section.xxx{
+    grid-area: xxx;
+    background-color: white;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.animation{
+ animation-name: appear;
+ animation-duration: 2s;
+ animation-iteration-count: infinite;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.title1{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 600px;
+    height: 100px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 90px;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+}
+
+.title2{
+    margin-top: 80px;
+    margin-bottom: 10px;
+    width: 600px;
+    height: 100px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+}
+
+.title3{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 600px;
+    height: 100px;  
+    text-align: center;
+}
+
+.title3 a{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.title3 a:hover{
+    color: #ffffff;
+    background-color: #000000;
+}
+
+
+.musicOfTheSpheres1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 60px;
+    color: #000000;
+    font-weight: bold;
+    margin-left: 70px;
+    margin-right: 650px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.worldTour1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    color: #000000;
+    font-weight: bold;
+    margin-left: 190px;
+}
+
+
+.mainVideo{
+    margin-left: 30px;
+    margin-top: 140px; 
+}
+
+.contactForm{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: #000000;
+    font-weight: normal;
+    border: solid;
+    border-color: black;
+    border-width: 2px;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.headerTour{
+    background-color: #ffffff;
+}
+
+.tourBackground{
+    margin-top: 0;
+    margin-left: 60px;
+    margin-right: 60px;
+    height:600px;
+    background-image: url(../Fotos/MusicOfTheSphereTourBackground.png);
+    background-color: rgb(55, 55, 242);
+}
+
+.musicOfTheSpheres2{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 45px;
+    color:#ffffff;
+    text-align: center;
+}
+
+.worldTour2{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color:#ffffff;
+    margin-left: 675px;
+}
+
+.menu2{
+    display: inline-block;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    color: white;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+.places{
+    background-color: rgb(21, 21, 190);
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.date1{
+    color: white;
+}
+.stadium1{
+    color: white;
+}
+.city1{
+    color: white;
+}
+.date2{
+    color: white;
+}
+.date3{
+    color: white;
+}
+.date4{
+    color: white;
+}
+.stadium2{
+    color: white;
+}
+.city2{
+    color: white;
+}
+
+.inline2{
+    display: inline-block;
+}
+
+
+
+.albumName{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    
+}
+
+
+
+
+.listen{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    color: black;
+}
+
+
+.single{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    color: black;  
+}
+
+
+
+
+.songName{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+.duo{
+    background-color: blue;
+}
+
+
+
+.tableAlign{
+    text-align: center;
+    align-content: center;
+}
