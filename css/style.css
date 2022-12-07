@@ -11,9 +11,9 @@
     margin-bottom: 10px;
     display: grid;
     grid-template-areas:
-      "coldplay nav";
+      "coldplay nav xx yy";
     grid-template-rows: 60px; 
-    grid-template-columns: 250px 1050px;
+    grid-template-columns: 350px 920px 60px 60px;
 }
 
 section.coldplay{
@@ -34,6 +34,20 @@ section.coldplay{
 section.nav{
     grid-area: nav;
     background-color: white;
+}
+
+section.xx{
+    grid-area: xx;
+    background-color: white;
+}
+
+section.yy{
+    grid-area: yy;
+    background-color: white;
+}
+
+.vevo{
+   margin-top: 12px;
 }
 
 .menu{
@@ -75,7 +89,7 @@ section.nav{
       "tour image image"
       "video video video"
       "form form xxx";
-    grid-template-rows: 445px 510px 240px; 
+    grid-template-rows: 445px 600px 350px; 
     grid-template-columns: 630px 370px 250px;
 }
 
@@ -91,8 +105,8 @@ section.image {
 
 section.video {
     grid-area: video;
-    background-color: maroon;
-    margin-top: 30px;
+    background-color: white;
+    margin-top: 110px;
     margin-bottom: 30px;
 }
   
@@ -124,20 +138,20 @@ section.xxx{
 }
 
 .title1{
-    margin-top: 30px;
+    margin-top: 100px;
     margin-bottom: 10px;
     width: 600px;
     height: 100px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 90px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 60px;
     color: #000000;
     font-weight: bold;
     text-align: center;
 }
 
 .title2{
-    margin-top: 80px;
-    margin-bottom: 10px;
+    margin-top: 40px;
+    margin-bottom: 30px;
     width: 600px;
     height: 100px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -316,13 +330,4 @@ section.xxx{
     font-weight: bold;
     color: black;
 }
-.duo{
-    background-color: blue;
-}
 
-
-
-.tableAlign{
-    text-align: center;
-    align-content: center;
-}
