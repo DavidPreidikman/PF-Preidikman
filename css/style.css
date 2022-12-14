@@ -16,6 +16,8 @@
     grid-template-columns: 350px 920px 60px 60px;
 }
 
+
+
 section.coldplay{
     grid-area: coldplay;  
     background-color: white;   
@@ -46,9 +48,13 @@ section.yy{
     background-color: white;
 }
 
-.vevo{
+.vevo1{
    margin-top: 12px;
 }
+
+.vevo2{
+    margin-top: 12px;
+ }
 
 .menu{
     padding-top: 23px;
@@ -63,7 +69,7 @@ section.yy{
 }
 
 .menu li a{
-    margin: 90px;
+    margin: 40px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
     font-weight: bold;
@@ -126,6 +132,11 @@ section.xxx{
  animation-name: appear;
  animation-duration: 2s;
  animation-iteration-count: infinite;
+}
+
+.animation a{
+    text-decoration: none;
+    color: darkgreen;
 }
 
 @keyframes appear {
@@ -297,26 +308,28 @@ section.xxx{
 
 .albumName{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
     color: black;
-    
 }
 
-
-
-
-.listen{
+.listen a{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    font-weight: normal;
-    color: black;
+    font-size: 17px;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.listen :hover{
+    color: #ffffff;
+    background-color: #000000;
 }
 
 
 .single{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 13px;
+    font-size: 10px;
     font-weight: normal;
     color: black;  
 }
@@ -331,3 +344,127 @@ section.xxx{
     color: black;
 }
 
+  
+  .galleryTitle{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    color: #000000;
+    font-weight: bold;
+  }
+
+  .gallerySubTitle{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: #000000;
+  }
+
+  .row img {
+    opacity: 0.8; 
+    cursor: pointer; 
+  }
+  
+  .row img:hover {
+    opacity: 1;
+  }
+
+  @media only screen and (min-width: 320px){
+    .row img{
+        width: 150px;
+    }
+    .albumName{
+        font-size: 12px;
+    }
+    .songName{
+        font-size: 9px;
+    }
+    
+  }
+
+  @media only screen and (min-width: 480px){
+    .row img{
+        width: 150px;
+    }
+    .albumName{
+        font-size: 15px;
+    }
+    .songName{
+        font-size: 10px;
+    }
+    .grid1{
+        grid-template-columns: 120px 650px 30px 30px;
+    }
+    .menu li a{
+        font-size: 13px;
+        margin: 15px;
+    }
+    .coldplay{
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    .vevo1{
+        width: 25px;
+    }
+    .vevo2{
+        width: 25px;
+    }
+    .menu{
+        margin-top: 0px;
+    }
+  }
+
+  @media only screen and (min-width: 768px){
+    .row img{
+        width: 200px;
+    }
+    .albumName{
+        font-size: 20px;
+    }
+    .songName{
+        font-size: 12px;
+    }
+    .grid1{
+        grid-template-columns: 150px 600px 40px 40px;
+    }
+    .menu li a{
+        font-size: 13px;
+        margin: 15px;
+    }
+    .coldplay{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .vevo1{
+        width: 35px;
+        margin-top: 15px;
+    }
+    .vevo2{
+        width: 35px;
+        margin-top: 15px;
+    }
+    .menu{
+        margin-top: 0px;
+    }
+  }
+
+  @media only screen and (min-width: 1024px){
+    .row img{
+        width: 300px;
+    }
+    .grid1{
+        grid-template-columns: 350px 920px 60px 60px;
+    }
+    .menu li a{
+        font-size: 15px;
+        margin: 40px;
+    }
+    .coldplay{
+        font-size: 35px;
+        margin-top: 0px;
+    }
+    .vevo1{
+        width: 50px;
+    }
+    .vevo2{
+        width: 45px;
+    }
+  }

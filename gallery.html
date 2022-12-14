@@ -43,14 +43,43 @@
     </header>
     <hr>
     <main>
-        <section class="tourBackground">
-            <section>
-                <h1 class="musicOfTheSpheres2">MUSIC OF THE SPHERES</h1>
-            </section>
-            <section>
-                <h2 class="worldTour2">2022 WORLD TOUR</h2>
-            </section>
-            </section>    
+        <div style="text-align:center">
+            <h2 class="galleryTitle"> 2022 WORLD TOUR </h2>
+            <p class="gallerySubTitle">CLICK ON THE IMAGES BELOW:</p>
+        </div>
+        <div class="container text-center">
+            <div class="row">
+              <div class="col-3 p-2">
+                <img src="./Fotos/Tour1.jpeg" alt="Music Of The Spheres ALBUM" width="100%px" onclick="myFunction(this);">
+              </div>
+              <div class="col-3 p-2">
+                <img src="./Fotos/Tour2.jpeg" alt="A Head Full Of Dreams ALBUM" width="100%"
+                onclick="myFunction(this);">
+              </div>
+              <div class="col-3 p-2">
+                <img src="./Fotos/Tour3.jpeg" alt="A Head Full Of Dreams ALBUM" width="100%"
+                onclick="myFunction(this);">
+              </div>
+              <div class="col-3 p-2">
+                <img src="./Fotos/Tour4.jpeg" alt="A Head Full Of Dreams ALBUM" width="100%"
+                onclick="myFunction(this);">
+              </div>
+            </div>
+            
+    <div class="container8">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="expandedImg" style="width:100%">
+        <div id="imgtext"></div>
+    </div>
+      
+      <script>
+      function myFunction(imgs) {
+        var expandImg = document.getElementById("expandedImg");
+        var imgText = document.getElementById("imgtext");
+        expandImg.src = imgs.src;
+        expandImg.parentElement.style.display = "block";
+      }
+      </script>
     </main>
 </body>
 </html>
